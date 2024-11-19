@@ -19,22 +19,29 @@
     border-spacing: 0; /* 无间隔 */
     border-radius: 10px; /* 圆角边框 */
   }
-		.button {
+		.button-style {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 24px;
-    color: #fff; /* 文字颜色 */
-    background-color: #62A0F1; /* 背景颜色 */
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #72A7FF;
     border: none;
-    border-radius: 5px; /* 圆角 */
-    text-decoration: none; /* 去除下划线 */
-    cursor: pointer; /* 鼠标悬停时呈现手型 */
-    transition: background-color 0.3s; /* 渐变效果 */
-  }
+    border-radius: 5px;
+    box-shadow: 0 9px #999;
+}
 
-  .button:hover {
-    background-color: #4a7ec1; /* 鼠标悬停时的背景颜色 */
-  }
+.button-style:hover {background-color: #3e8e41}
+
+.button-style:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
 </style>
 </head>
 
@@ -64,7 +71,7 @@
     </tr>
   </tbody>
 </table>
-<p style="font-size: 24px"><a href="../index.html" class="button">返回</a></p>
+<p style="font-size: 24px"><a href="../index.html" class="button-style">返回</a></p>
 </body>
 </html>
 
