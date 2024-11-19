@@ -15,6 +15,25 @@
   table {
     margin: 0 auto; /* 将表格居中 */
 	background-color: white; /* 给表格添加白色背景 */
+	  border-collapse: separate; /* 单独边框 */
+    border-spacing: 0; /* 无间隔 */
+    border-radius: 10px; /* 圆角边框 */
+  }
+		.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    color: #fff; /* 文字颜色 */
+    background-color: #62A0F1; /* 背景颜色 */
+    border: none;
+    border-radius: 5px; /* 圆角 */
+    text-decoration: none; /* 去除下划线 */
+    cursor: pointer; /* 鼠标悬停时呈现手型 */
+    transition: background-color 0.3s; /* 渐变效果 */
+  }
+
+  .button:hover {
+    background-color: #4a7ec1; /* 鼠标悬停时的背景颜色 */
   }
 </style>
 </head>
@@ -45,7 +64,7 @@
     </tr>
   </tbody>
 </table>
-<p style="font-size: 24px"><a href="../index.html">返回</a></p>
+<p style="font-size: 24px"><a href="../index.html" class="button">返回</a></p>
 </body>
 </html>
 
