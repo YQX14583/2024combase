@@ -5,21 +5,51 @@
 <title>无标题文档</title>
 	<style>
   body {
-    text-align: center; /* 使文本居中 */
-	background-image: url('../image/1.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+    text-align: center;
+    background-image: url('../image/1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   table {
-    margin: 0 auto; /* 将表格居中 */
-	background-color: white; /* 给表格添加白色背景 */
-	  border-collapse: separate; /* 单独边框 */
-    border-spacing: 0; /* 无间隔 */
-    border-radius: 10px; /* 圆角边框 */
+    margin: 20px auto;
+    background-color: white; 
+    border-collapse: separate; 
+    border-spacing: 0; 
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    overflow: hidden; 
   }
-		.button-style {
+
+  th, td {
+    border: 1px solid #eaeaea; 
+    padding: 15px; 
+  }
+
+  th {
+    color: #333; 
+    font-weight: normal; 
+  }
+
+ 
+  table tbody tr:first-child {
+    background-color: #EFD92D;
+  }
+
+  table tbody tr:first-child th {
+    color: white; 
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #ffffff; 
+  }
+
+  .button-style {
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
@@ -32,16 +62,20 @@
     border: none;
     border-radius: 5px;
     box-shadow: 0 9px #999;
-}
+    transition: all 0.3s ease;
+  }
 
-.button-style:hover {background-color: #3e8e41}
-
-.button-style:active {
+  .button-style:hover {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
+    transform: translateY(-2px);
+  }
 
+  .button-style:active {
+    background-color: #3e8e41;
+    box-shadow: 0 3px #666;
+    transform: translateY(1px); 
+  }
 </style>
 </head>
 
