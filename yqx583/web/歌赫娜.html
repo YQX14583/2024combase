@@ -10,7 +10,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-	background-attachment: fixed;
+    background-attachment: fixed;
   }
 
   table {
@@ -33,7 +33,6 @@
     font-weight: normal; 
   }
 
- 
   table tbody tr:first-child {
     background-color: #C75BE8;
   }
@@ -77,6 +76,15 @@
     box-shadow: 0 3px #666;
     transform: translateY(1px); 
   }
+  img {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  img:hover {
+    transform: scale(1.2) rotate(5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+
 </style>
 </head>
 
